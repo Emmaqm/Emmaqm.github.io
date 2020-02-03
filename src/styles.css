@@ -1,0 +1,25 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.container-max{
+    max-width: 1400px;
+}
+
+.btn-primary{
+    border-radius:1px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px solid #4299e1;
+    background-color: #4299e1;
+    color: white;
+    transition: background-color ease-in .2s;
+}
+
+.btn-primary:hover{
+    transition: background-color ease-out .2s;
+    background-color: white;
+    color: #3182ce ;
+}
