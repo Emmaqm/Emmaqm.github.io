@@ -17,7 +17,8 @@
   },
   "scripts": {
     "dev:watch": "webpack-dev-server --mode=development --config webpack.config.js",
-    "dev:build": "webpack --mode=development --config webpack.config.js"
+    "dev:build": "webpack --mode=development --config webpack.config.js",
+    "prod:build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
