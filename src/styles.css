@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container-max{
     max-width: 1400px;
 }
