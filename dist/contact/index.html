@@ -68,13 +68,13 @@
 
             <form action="https://formspree.io/xknrbgre" class="flex flex-col mt-10 mb-32 border-gray-100" method="POST"> 
                 <label class="hidden" for="name">Nombre</label>
-                <input class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl" type="text" id="name" name="name" placeholder="Nombre">
+                <input required class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl" type="text" id="name" name="name" placeholder="Nombre">
 
                 <label class="hidden" for="email">Email</label>
-                <input class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl mt-6" type="email" id="email" name="_replyto" placeholder="Email">
+                <input required class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl mt-6" type="email" id="email" name="_replyto" placeholder="Email">
 
                 <label class="hidden" for="message">Mensaje</label>
-                <textarea class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl mt-6" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea class="py-4 px-6 border-gray-400 border rounded-lg max-w-2xl mt-6">
+                <textarea required class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl mt-6" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea class="py-4 px-6 border-gray-400 border rounded-lg max-w-2xl mt-6">
                 
 
                 <input class="py-3 px-8 btn-primary w-48 mt-10 cursor-pointer" type="submit" id="send" value="Enviar Mensaje">
