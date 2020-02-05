@@ -42,169 +42,42 @@
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="white" id="Close"></path><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                         </button>
                     </li>                   
-                    <li class="px-5 py-2 md:py0"><a onclick="expandMenu()" href="/">inicio</a></li>
-                    <li class="px-5 py-2"><a onclick="expandMenu()" href="#about">sobre mi</a onclick="expandMenu()"></li>
-                    <li class="px-5 py-2"><a onclick="expandMenu()" href="#works">mis proyectos</a onclick="expandMenu()"></li>
-                    <li class="px-5 py-2"><a onclick="expandMenu()" href="/contact">contáctame</a></li>
+                    <li class="px-5 py-2 md:py0"><a href="/">inicio</a></li>
+                    <li class="px-5 py-2"><a href="/#about">sobre mi</a></li>
+                    <li class="px-5 py-2"><a href="/#works">mis proyectos</a></li>
+                    <li class="px-5 py-2"><a href="/contact">contáctame</a></li>
                 </ul>
             </nav>
 
         </header>
-    
-        <main>
-            <div class="md:mt-40 sm:mt-32 mt-20">
-                <div class="max-w-4xl">
-                    <span class="text-grey-800 sm:text-xl ml-1">Hola, soy Emmanuel Quintana,</span>
-                    <h1 class="text-gray-800 font-semibold text-4xl sm:text-6xl leading-tight">Desarrollador front-end<br>y diseñador UI/UX</h1>
-                </div>
-                <div class="flex sm:flex-row flex-col sm:items-center items-baseline sm:text-lg sm:mt-10 mt-6">
-                    <button class="py-3 px-8 btn-primary"><a href="#works">Mis proyectos</a></button>
-                    <a class="sm:ml-8 text-blue-500 border-b-4 border-white hover:border-blue-500 sm:mt-1 mt-4" href="/contact">¿Tienes una oportunidad para mi? </a>
-                </div>
-    
-                <div class="md:mt-40 sm:mt-32 mt-20">
-                    <a href="#about">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40.241" height="74.621" viewBox="0 0 40.241 74.621">
-                            <g id="Grupo_3" data-name="Grupo 3" transform="translate(-289.379 -865)">
-                              <line id="Línea_1" data-name="Línea 1" y2="71" transform="translate(309.5 866.5)" fill="none" stroke="#2d3748" stroke-linecap="round" stroke-width="3"/>
-                              <line id="Línea_2" data-name="Línea 2" x1="18" y2="19" transform="translate(309.5 918.5)" fill="none" stroke="#2d3748" stroke-linecap="round" stroke-width="3"/>
-                              <line id="Línea_3" data-name="Línea 3" x2="18" y2="19" transform="translate(291.5 918.5)" fill="none" stroke="#2d3748" stroke-linecap="round" stroke-width="3"/>
-                            </g>
-                        </svg>    
-                    </a>
-              
-                </div>
-            </div>
+
+        <main class="mt-20">
+            <h2 class="text-4xl font-semibold text-gray-800">
+                Gracias por demotrarme tu interés.
+            </h2>
+
+            <p class="mt-3 text-lg mb-1 text text-gray-700">
+                Escríbeme un mensaje con tu propuesta y a la brevedad lo veré.<br>
+                Por lo general reviso los mensajes todos los días.
+            </p>
+
+            <form action="https://formspree.io/xknrbgre" class="flex flex-col mt-10 mb-32 border-gray-100" method="POST"> 
+                <label class="hidden" for="name">Nombre</label>
+                <input class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl" type="text" id="name" name="name" placeholder="Nombre">
+
+                <label class="hidden" for="email">Email</label>
+                <input class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl mt-6" type="email" id="email" name="_replyto" placeholder="Email">
+
+                <label class="hidden" for="message">Mensaje</label>
+                <textarea class="py-4 px-6 border-gray-500 border rounded-sm max-w-2xl mt-6" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea class="py-4 px-6 border-gray-400 border rounded-lg max-w-2xl mt-6">
+                
+
+                <input class="py-3 px-8 btn-primary w-48 mt-10 cursor-pointer" type="submit" id="send" value="Enviar Mensaje">
+            </form>
         </main>
     </div>
 
-    <section>
-        <div id="about" class="mt-20 bg-blue-500">
-            <div class="container mx-auto py-24 px-16 pb-48">
-                <div>
-                    <span class="h-1 w-10 bg-white block mb-1"></span>
-                    <h2 class="text-white text-4xl font-semibold">Sobre mi</h2>
-                    <p class="text-white mt-6 text-lg mb-1">
-                        Soy un desarrollador centrado en el front-end y en el diseño UI/UX.<br>
-                        Mi objetivo es convertir ideas, en interfaces que los usuarios puedan disfrutar y entender con solo mirarlas una vez.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <div class="container mx-auto py-20 sm-px-10 px-4">
-            <div class="flex justify-center md:justify-between bg-white flex-wrap md:flex-no-wrap ">
-                <div class="text-center rounded-lg shadow-lg py-16 px-16 -mt-48 bg-white max-w-xl md:mr-8">
-                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="42.735" height="62.307" viewBox="0 0 42.735 62.307">
-                        <g id="Grupo_12" data-name="Grupo 12" transform="translate(-892.25 -2197)">
-                          <g id="Grupo_13" data-name="Grupo 13" transform="translate(893.75 2200)">
-                            <g id="Grupo_11" data-name="Grupo 11">
-                              <g id="Rectángulo_9" data-name="Rectángulo 9" transform="translate(6.25)" fill="#4299e1" stroke="#4a5568" stroke-width="3">
-                                <rect width="27" height="7" rx="3.5" stroke="none"/>
-                                <rect x="-1.5" y="-1.5" width="30" height="10" rx="5" fill="none"/>
-                              </g>
-                              <path id="Trazado_4" data-name="Trazado 4" d="M1153.449,2669s-.186,6.581,2.856,10.555,9.313,5.339,9.313,5.339-14.994,24.245-19.868,32.409" transform="translate(-1125.882 -2660.053)" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                              <path id="Trazado_5" data-name="Trazado 5" d="M1157.919,2669s.186,6.581-2.856,10.555-9.313,5.339-9.313,5.339,14.994,24.245,19.868,32.409" transform="translate(-1145.75 -2660.053)" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                            </g>
-                            <line id="Línea_5" data-name="Línea 5" y2="17.384" transform="translate(19.743 8.692)" fill="none" stroke="#4a5568" stroke-width="3"/>
-                            <circle id="Elipse_1" data-name="Elipse 1" cx="3.5" cy="3.5" r="3.5" transform="translate(16.25 23)" fill="#4a5568"/>
-                          </g>
-                        </g>
-                    </svg>
-                    <h3 class="text-3xl font-semibold text-gray-800 mt-4">Diseño</h3> 
-
-                    <p class="text-gray-700 mt-3">
-                        Me gusta diseñar interfaces útiles y atractivas siempre centrándome en el usuario final.
-                    </p>
-                      
-                    <h4 class="mt-12 text-blue-500 text-xl mb-4">Mis habilidades:</h4>
-                    <ul class="text-gray-700">
-                        <li class="mt-1">Accesibilidad</li>
-                        <li class="mt-1">Usabilidad</li>
-                        <li class="mt-1">Diseño de interfaces</li>
-                        <li class="mt-1">Prototipos</li>
-                        <li class="mt-1">Arquitectura de la información</li>
-                    </ul>
-
-
-                    <h4 class="mt-12 text-blue-500 text-xl mb-4">Herramientas de diseño:</h4>
-                    <ul class="text-gray-700">
-                        <li class="mt-1">Lápiz y papel</li>
-                        <li class="mt-1">Adobe XD</li>
-                        <li class="mt-1">Figma</li>
-                        <li class="mt-1">Adobe Illustrator</li>
-                        <li class="mt-1">Adobe Photoshop</li>
-                    </ul>
-                </div>
-                
-                <div class="text-center rounded-lg shadow-lg py-16 px-16 md:-mt-48 bg-white max-w-xl md:ml-8 mt-16 md:mt-0">
-                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="70.621" height="60.25" viewBox="0 0 70.621 60.25">
-                        <g id="Grupo_19" data-name="Grupo 19" transform="translate(1.5 1.5)">
-                          <path id="Trazado_7" data-name="Trazado 7" d="M1214,2765.875v7.636l2.282,3.072,3.727,1.229h57.961l3.5-3.949v-7.987Z" transform="translate(-1214 -2720.649)" fill="#4299e1"/>
-                          <g id="Grupo_14" data-name="Grupo 14">
-                            <rect id="Rectángulo_10" data-name="Rectángulo 10" width="67.621" height="57.25" rx="9" fill="none" stroke="#4a5568" stroke-linejoin="round" stroke-width="3"/>
-                            <line id="Línea_6" data-name="Línea 6" x2="67.557" transform="translate(0.351 45.614)" fill="none" stroke="#4a5568" stroke-width="3"/>
-                          </g>
-                          <g id="Grupo_18" data-name="Grupo 18" transform="translate(16.933 16.649)">
-                            <line id="Línea_9" data-name="Línea 9" x1="5.521" y2="16.061" transform="translate(14.242)" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-width="3"/>
-                            <g id="Grupo_16" data-name="Grupo 16" transform="translate(25.472 3.013)">
-                              <line id="Línea_7" data-name="Línea 7" x2="8.031" y2="5.019" transform="translate(0.502)" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-width="3"/>
-                              <path id="Trazado_6" data-name="Trazado 6" d="M-1,4.894,7.532,0" transform="translate(1 5.019)" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-width="3"/>
-                            </g>
-                            <g id="Grupo_17" data-name="Grupo 17" transform="translate(0 3.013)">
-                              <line id="Línea_7-2" data-name="Línea 7" x1="8.031" y2="5.019" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-width="3"/>
-                              <path id="Trazado_6-2" data-name="Trazado 6" d="M7.532,4.894-1,0" transform="translate(1 5.019)" fill="none" stroke="#4a5568" stroke-linecap="round" stroke-width="3"/>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                      
-                    <h3 class="text-3xl font-semibold text-gray-800 mt-4">Desarrollo</h3> 
-
-                    <p class="text-gray-700 mt-3">
-                        Disfruto construyendo diseños desde cero y me encanta colaborar con tareas de back-end.
-                    </p>
-                      
-                    <h4 class="mt-12 text-blue-500 text-xl mb-4">Lenguajes que domino:</h4>
-                    <ul class="text-gray-700">
-                        <li class="mt-1">HTML</li>
-                        <li class="mt-1">CSS</li>
-                        <li class="mt-1">Javascript</li>
-                        <li class="mt-1">PHP/Laravel</li>
-                        <li class="mt-1">SQL</li>
-                    </ul>
-
-
-                    <h4 class="mt-12 text-blue-500 text-xl mb-4">Herramientas y frameworks:</h4>
-                    <ul class="text-gray-700">
-                        <li class="mt-1">Visual Studio Code</li>
-                        <li class="mt-1">Git</li>
-                        <li class="mt-1">Tailwind</li>
-                        <li class="mt-1">Bootstrap</li>
-                        <li class="mt-1">Composer</li>
-                        <li class="mt-1">npm</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <div id="works" class="container mx-auto py:4 sm:py-16 md:py-24 px-4 sm:px-16 pb-20 md:pb-48">
-                <div>
-                    <span class="h-1 w-10 bg-gray-800 block mb-1"></span>
-                    <h2 class="text-gray-800 text-4xl font-semibold">Mis proyectos</h2>
-                </div>
-
-                <div class="flex mt-10 flex-wrap lg:flex-no-wrap">
-                    <div class="rounded-lg shadow-lg hover:shadow-2xl cursor-pointer bg-blue-400 block w-full lg:w-1/3 h-48 lg:mr-4"></div>
-                    <div class="rounded-lg shadow-lg hover:shadow-2xl cursor-pointer bg-blue-400 block w-full lg:w-1/3 h-48 lg:mx-4 mt-8 lg:mt-0"></div>
-                    <div class="rounded-lg shadow-lg hover:shadow-2xl cursor-pointer bg-blue-400 block w-full lg:w-1/3 h-48 lg:ml-4 mt-8 lg:mt-0"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer class="bg-blue-500 text-center py-24 px-16 pb-16">
         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="141.6" height="29.987" viewBox="0 0 141.6 29.987">
@@ -238,7 +111,7 @@
         </p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
 
     <script>
         function expandMenu(){

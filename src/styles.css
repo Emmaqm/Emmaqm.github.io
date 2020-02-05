@@ -27,3 +27,13 @@ html {
     background-color: white;
     color: #3182ce ;
 }
+
+.menu{
+    right: -100%;
+    transition: cubic-bezier(0.4, 0.0, 1, 1) 0.3s;
+}
+
+.expanded{
+    right: 0;
+    transition: cubic-bezier(0.0, 0.0, 0.2, 1) 0.3s;
+}
