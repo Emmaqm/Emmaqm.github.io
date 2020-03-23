@@ -23,9 +23,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 </head>
 <body class="font-body">
-    <div class="container-max mx-auto px-6">
+    <div class="container-max mx-auto px-6 lg:px-16 md:pt-12 py-8">
 
-        <header class="md:mt-12 mt-8 flex justify-between items-center">
+        <header class="flex justify-between items-center">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="141.6" height="29.987" viewBox="0 0 141.6 29.987">
 
@@ -43,14 +43,14 @@
                 </button>
                 <ul class="menu md:flex block text-2xl md:text-lg fixed md:static px-10 md:px-0 h-screen md:h-auto top-0 pt-10 md:pt-0 text-white md:text-gray-800 bg-blue-500 md:bg-transparent shadow-md md:shadow-none">
                     <li class="text-right block md:hidden">
-                        <button onclick="expandMenu()">
+                        <button class="openMenu-button">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="white" id="Close"></path><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                         </button>
                     </li>                   
-                    <li class="px-5 py-2 md:py0"><a href="/">inicio</a></li>
-                    <li class="px-5 py-2"><a href="/#about">sobre mi</a></li>
-                    <li class="px-5 py-2"><a href="/#works">mis proyectos</a></li>
-                    <li class="px-5 py-2"><a href="/contact">contáctame</a></li>
+                    <li class="md:hover:text-blue-500 px-5 py-2 md:py0"><a href="/">inicio</a></li>
+                    <li class="md:hover:text-blue-500 px-5 py-2"><a href="/#about">sobre mi</a></li>
+                    <li class="md:hover:text-blue-500 px-5 py-2"><a href="/#works">mis proyectos</a></li>
+                    <li class="md:hover:text-blue-500 px-5 py-2"><a href="/contact">contáctame</a></li>
                 </ul>
             </nav>
 
@@ -58,7 +58,7 @@
 
         <main class="mt-20">
             <h2 class="text-4xl font-semibold text-gray-800">
-                Gracias por demotrarme tu interés.
+                Gracias por demostrarme tu interés.
             </h2>
 
             <p class="mt-3 text-lg mb-1 text text-gray-700">
@@ -120,14 +120,20 @@
     <script src="../app.js"></script>
 
     <script>
-        function expandMenu(){
-            const menu = document.querySelector('.menu');
+        const menu = document.querySelector('.menu');
+        const overlay = document.querySelector('.overlay');
 
+        overlay.addEventListener("click", expandMenu);
+        menu.addEventListener("click", expandMenu);
+
+        function expandMenu(){
             if(menu.classList.contains('expanded')){
                 menu.classList.remove('expanded');
+                overlay.classList.add('hidden');
             }else{
                 menu.classList.add('expanded');
-            }
+                overlay.classList.remove('hidden');
+            } 
         }
     </script>
 

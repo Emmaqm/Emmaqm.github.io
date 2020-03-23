@@ -26,15 +26,22 @@ html {
 .btn-primary:hover{
     transition: background-color ease-out .2s;
     background-color: white;
-    color: #3182ce ;
+    color: #4299e1 ;
 }
 
 .menu{
     right: -100%;
-    transition: cubic-bezier(0.4, 0.0, 1, 1) 0.3s;
+    transition: right cubic-bezier(0.4, 0.0, 1, 1) 0.3s;
 }
 
 .expanded{
     right: 0;
-    transition: cubic-bezier(0.0, 0.0, 0.2, 1) 0.3s;
+    transition: right cubic-bezier(0.0, 0.0, 0.2, 1) 0.3s;
+}
+
+
+@media(min-width: 768px){
+    .overlay{
+        display: none !important;
+    }
 }
